@@ -1,0 +1,95 @@
+/* General settings */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* TabPane settings */
+.tab-pane {
+    -fx-background-color: #fff;
+    -fx-tab-min-width: 120px;
+}
+
+/* Tab settings */
+.tab {
+    -fx-background-color: #ddd;
+    -fx-text-fill: #333;
+}
+
+.tab:selected {
+    -fx-background-color: #fff;
+    -fx-border-color: #bbb;
+    -fx-border-width: 0 0 2px 0; /* Bottom border only */
+}
+
+/* Tab label settings */
+.tab .tab-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Tab content settings */
+.tab-pane .tab-content-area {
+    -fx-background-color: #fff;
+    -fx-padding: 20px;
+}
+
+/* Button settings */
+.button {
+    -fx-background-color: #fff;
+    -fx-text-fill: #333;
+    -fx-border-color: #bbb;
+    -fx-border-width: 1px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ddd;
+}
+
+.button:pressed {
+    -fx-background-color: #ccc;
+}
+
+
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* TextField settings */
+.text-field {
+    -fx-background-color: #fff;
+    -fx-text-fill: #333;
+    -fx-border-color: #bbb;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #666;
+}
+
+/* ComboBox settings */
+.combo-box {
+    -fx-background-color: #fff;
+    -fx-text-fill: #333;
+    -fx-border-color: #bbb;
+    -fx-border-width: 1px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #666;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #ddd;
+    -fx-text-fill: #333;
+}
