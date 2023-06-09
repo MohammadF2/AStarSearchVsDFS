@@ -1,6 +1,7 @@
-package com.example.astarsearchvsdfs.helper;
+package com.example.astarsearchvsdfs.Engine;
 
 import com.example.astarsearchvsdfs.model.City;
+import com.example.astarsearchvsdfs.model.DNode;
 import com.example.astarsearchvsdfs.model.Edge;
 
 import java.util.*;
@@ -21,7 +22,7 @@ public class DFSAlgorithm {
             }
 
             current.city.calculateAdjacentCities(edges);
-            for (City adjacentCity : current.city.adjacentCities) {
+            for (City adjacentCity : current.city.getAdjacentCities()) {
                 if (!visitedNodes.containsKey(adjacentCity)) {
                     DNode adjacent = new DNode(adjacentCity, current);
                     visitedNodes.put(adjacentCity, adjacent);

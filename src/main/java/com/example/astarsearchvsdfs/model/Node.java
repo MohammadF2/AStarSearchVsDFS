@@ -1,13 +1,11 @@
-package com.example.astarsearchvsdfs.helper;
-
-import com.example.astarsearchvsdfs.model.City;
+package com.example.astarsearchvsdfs.model;
 
 public class Node {
 
-    City city;
-    Node parent;
-    double gScore;
-    double hScore;
+    public City city;
+    public Node parent;
+    public double gScore;
+    public double hScore;
 
     public Node(City city, Node parent, double gScore, double hScore) {
         this.city = city;

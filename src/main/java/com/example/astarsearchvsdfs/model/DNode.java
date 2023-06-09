@@ -1,10 +1,8 @@
-package com.example.astarsearchvsdfs.helper;
-
-import com.example.astarsearchvsdfs.model.City;
+package com.example.astarsearchvsdfs.model;
 
 public class DNode {
-    City city;
-    DNode parent;
+    public City city;
+    public DNode parent;
 
     public DNode(City city, DNode parent) {
         this.city = city;

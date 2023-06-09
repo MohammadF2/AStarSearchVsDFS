@@ -1,7 +1,7 @@
 package com.example.astarsearchvsdfs;
 
-import com.example.astarsearchvsdfs.helper.AStarAlgorithm;
-import com.example.astarsearchvsdfs.helper.DFSAlgorithm;
+import com.example.astarsearchvsdfs.Engine.AStarAlgorithm;
+import com.example.astarsearchvsdfs.Engine.DFSAlgorithm;
 import com.example.astarsearchvsdfs.model.City;
 import com.example.astarsearchvsdfs.model.Edge;
 import javafx.event.ActionEvent;
@@ -53,7 +53,7 @@ public class BothSceneController implements Initializable {
         AStarAlgorithm aStar = new AStarAlgorithm();
         DFSAlgorithm dfsAlgorithm = new DFSAlgorithm();
         double time1 = System.currentTimeMillis();
-        List<City> AStarPath = aStar.aStar(sourceCom.getValue(), disCom.getValue(), edges);
+        List<City> AStarPath = aStar.aStar(sourceCom.getValue(), disCom.getValue(), edges, cities);
         time1 = System.currentTimeMillis() - time1;
         double time2 = System.currentTimeMillis();
         List<City> dfsPath = dfsAlgorithm.dfs(sourceCom.getValue(), disCom.getValue(), edges);

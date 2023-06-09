@@ -3,7 +3,6 @@ package com.example.astarsearchvsdfs.model;
 public class Edge {
     City city1;
     City city2;
-
     double distance;
 
     public Edge(City city1, City city2, double distance) {
